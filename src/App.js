@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+//import Header from "./components/Header";
+import Login from "./components/Login";
+
+const isLoggedIn = true;
+const fullname = "Hakan Duyar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="test">
+    
+     {/* isLoggedIn ? ( <div> Hoşgeldin  {fullname}</div>) : <a href="#/">Giriş yapınız</a> */}
+   
+     {/*isLoggedIn && <div>Hoşgeldin {fullname}</div>*/}
+
+     {/*!isLoggedIn && <a href="#/">Gririş yapınız</a>*/}
+
+     {/*isLoggedIn ? <div>Hoşgeldin {fullname}</div> : null*/}
+
+     {/*isLoggedIn ? <div>Hoşgeldin {fullname}</div> : <Header />*/}
+     
+     {isLoggedIn ? <div>Hoşgeldin {fullname}</div> : <Login />}
+
+    
     </div>
   );
 }
